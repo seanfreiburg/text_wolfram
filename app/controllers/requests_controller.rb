@@ -54,6 +54,8 @@ def process_wolfram_response response
       body_out = definite_integral response
     when "Definition:WordData"
       body_out = body_input +"=" + word_data(response)
+    when "BasicInformation:MovieData"
+      body_out = response.pods[1].subpods[0].plaintext
     else
       body_out = 'response not available'
   end

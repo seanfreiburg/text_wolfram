@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1b8cc1e-a5e2-4e48-9ef0-5919c0dd4673" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/home.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/home.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/request.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/request.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.css.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.haml" afterPath="$PROJECT_DIR$/app/views/home/index.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/requests_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/requests_controller.rb" />
     </list>
     <ignored path="text_wolfram.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css.sass" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.css.sass" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.098684214" vertical-offset="0" max-vertical-offset="760">
+            <state line="5" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="195">
               <folding />
             </state>
           </provider>
@@ -88,15 +80,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/index.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1080" selection-end="1080" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="630">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -106,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requests_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="requests_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="54" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.0" vertical-offset="511" max-vertical-offset="1770">
+            <state line="57" column="17" selection-start="1501" selection-end="1501" vertical-scroll-proportion="0.4461738" vertical-offset="511" max-vertical-offset="1800">
               <folding />
             </state>
           </provider>
@@ -136,15 +119,15 @@
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/requests/index.haml" />
         <option value="$PROJECT_DIR$/config/initializers/api_keys.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/requests_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/home.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/request.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/home/index.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.sass" />
+        <option value="$PROJECT_DIR$/app/views/home/index.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/requests_controller.rb" />
       </list>
     </option>
   </component>
@@ -800,20 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="54" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.0" vertical-offset="511" max-vertical-offset="1770">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/api_keys.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="134" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="23" selection-start="53" selection-end="53" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="300">
@@ -856,16 +825,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.haml">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1080" selection-end="1080" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="630">
+        <state line="5" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="195">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.sass">
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.098684214" vertical-offset="0" max-vertical-offset="760">
+        <state line="2" column="18" selection-start="91" selection-end="91" vertical-scroll-proportion="0.04016064" vertical-offset="0" max-vertical-offset="747">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/api_keys.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="20" selection-start="134" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="17" selection-start="1501" selection-end="1501" vertical-scroll-proportion="0.4461738" vertical-offset="511" max-vertical-offset="1800">
           <folding />
         </state>
       </provider>
