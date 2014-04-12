@@ -36,7 +36,7 @@ end
 def process_wolfram_response response
 
   text = try_result response
-  if text == null
+  if text == nil
     try_decimal_approx response
   end
 end
@@ -47,7 +47,7 @@ def try_result response
     result = response.find { |pod| pod.title == "Result" }
     "#{input.subpods[0].plaintext} = \n #{result.subpods[0].plaintext}"
   rescue
-    null
+    nil
   end
 
 end
@@ -58,6 +58,6 @@ def try_decimal_approx response
     approx = response["DecimalApproximation"].subpods[0].plaintext
     "#{input} = #{approx}"
   rescue
-    null
+    nil
   end
 end
