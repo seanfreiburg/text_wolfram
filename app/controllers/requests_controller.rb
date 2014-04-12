@@ -93,7 +93,7 @@ def ip_request(ip_address)
   response = http.request(request)
 
   #Probably don't want to use all of the data.
-  JSON.load(response.body)
+  JSON.load(response.body).to_s
 end
 
 
