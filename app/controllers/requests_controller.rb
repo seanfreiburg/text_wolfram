@@ -39,7 +39,7 @@ end
 
 def process_wolfram_response response
 
-  body_input = response.pods[0].plaintext
+  body_input = response.pods[0].subpods[0].plaintext
   body_out = ''
   case response.pods[1].id
     when "DecimalApproximation"
@@ -55,7 +55,7 @@ end
 
 def result response
   result = response.find { |pod| pod.title == "Result" }
-  "#{result.subpods[0].plaintext}"
+  result.subpods[0].plaintext
 end
 
 def decimal_approx response
