@@ -68,7 +68,7 @@ def decimal_approx response
   response["DecimalApproximation"].subpods[0].plaintext
 end
 
-def indefinte_integral response
+def indefinite_integral response
   response["IndefiniteIntegral"].subpods[0].plaintext
 end
 
