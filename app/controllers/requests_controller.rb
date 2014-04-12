@@ -58,6 +58,8 @@ def process_wolfram_response response
       body_out = movie response
     when "CorporateInformationPod:InternetData"
       body_out = corporate_internet response
+    when "BasicInformation:PeopleData"
+      body_out = people_data response
     else
       body_out = 'response not available'
   end
@@ -119,5 +121,9 @@ def corporate_internet response
   response.pods[1].subpods[0].plaintext
 end
 
+def people_data response
+  facts = response.find { |pod| pod.id == "NotableFacts:PeopleData" }
+  response.pods[1].subpods[0].plaintext + facts.subpods[0].plaintext
+end
 
 
