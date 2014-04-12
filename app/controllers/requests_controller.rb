@@ -41,8 +41,9 @@ def process_wolfram_response response
 
   text = try_result response
   if text == nil
-    try_decimal_approx response
+    text =try_decimal_approx response
   end
+  text
 end
 
 def try_result response

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1b8cc1e-a5e2-4e48-9ef0-5919c0dd4673" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/requests/index.haml" afterPath="$PROJECT_DIR$/app/views/requests/index.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/requests_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/requests_controller.rb" />
     </list>
     <ignored path="text_wolfram.iws" />
@@ -47,7 +46,7 @@
       <file leaf-file-name="requests_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="30" selection-start="452" selection-end="452" vertical-scroll-proportion="0.3252551" vertical-offset="0" max-vertical-offset="1110">
+            <state line="37" column="20" selection-start="864" selection-end="864" vertical-scroll-proportion="0.70790815" vertical-offset="0" max-vertical-offset="1125">
               <folding />
             </state>
           </provider>
@@ -751,7 +750,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="452" selection-end="452" vertical-scroll-proportion="0.3252551" vertical-offset="0" max-vertical-offset="1110">
+        <state line="37" column="20" selection-start="864" selection-end="864" vertical-scroll-proportion="0.70790815" vertical-offset="0" max-vertical-offset="1125">
           <folding />
         </state>
       </provider>
