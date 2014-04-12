@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c1b8cc1e-a5e2-4e48-9ef0-5919c0dd4673" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/requests_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/requests_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="text_wolfram.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,7 +91,7 @@
       <file leaf-file-name="requests_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="6" selection-start="3630" selection-end="3630" vertical-scroll-proportion="0.5797665" vertical-offset="1428" max-vertical-offset="2490">
+            <state line="112" column="9" selection-start="2959" selection-end="2959" vertical-scroll-proportion="0.52140075" vertical-offset="1278" max-vertical-offset="2490">
               <folding />
             </state>
           </provider>
@@ -424,7 +423,9 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Gemfile">
@@ -637,7 +638,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="6" selection-start="3630" selection-end="3630" vertical-scroll-proportion="0.5797665" vertical-offset="1428" max-vertical-offset="2490">
+        <state line="112" column="9" selection-start="2959" selection-end="2959" vertical-scroll-proportion="0.52140075" vertical-offset="1278" max-vertical-offset="2490">
           <folding />
         </state>
       </provider>

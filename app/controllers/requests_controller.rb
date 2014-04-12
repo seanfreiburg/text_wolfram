@@ -110,7 +110,7 @@ def ip_request(ip_address)
   response = http.request(request)
 
   #Probably don't want to use all of the data.
-  JSON.load(response.body).to_s
+  hash = JSON.load(response.body)
   if not hash['gds_error'].nil?
     body = hash['gds_error']['message']
   else
