@@ -48,6 +48,10 @@ def process_wolfram_response response
       body_out = decimal_approx response
     when "Result"
       body_out = result response
+    when "IndefiniteIntegral"
+      body_out = indefinite_integral response
+    when "VisualRepresentationOfTheIntegral"
+      body_out = definite_integral response
     else
       body_out = 'response not available'
   end
@@ -64,12 +68,12 @@ def decimal_approx response
   response["DecimalApproximation"].subpods[0].plaintext
 end
 
-def indefinte_integral
-
+def indefinte_integral response
+  response["IndefiniteIntegral"].subpods[0].plaintext
 end
 
-def definite_integral
-
+def definite_integral response
+  response["Input"].subpods[0].plaintext
 end
 
 def ip_match body
