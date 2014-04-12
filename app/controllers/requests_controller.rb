@@ -124,6 +124,7 @@ end
 def people_data response
   facts_sec = response.find { |pod| pod.id == "NotableFacts:PeopleData" }
   facts =  facts.subpods[0].plaintext if facts_sec
+  facts = '' if facts.nil?
   response.pods[1].subpods[0].plaintext + facts
 end
 
