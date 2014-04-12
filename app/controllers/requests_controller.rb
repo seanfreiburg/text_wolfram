@@ -140,7 +140,8 @@ def quote response
   body += company_info.to_s
 end
 
+
 def element
-  response.pods[0].subpods[0].plaintext + response.pods[3].subpods[0].plaintext
+  response.pods[0].subpods[0].plaintext + (response.find { |pod| pod.id == "CompanyInformation" }).subpods[0].plaintext
 end
 
