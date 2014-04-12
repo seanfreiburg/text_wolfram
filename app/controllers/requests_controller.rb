@@ -127,7 +127,7 @@ end
 
 def people_data response
   facts_sec = response.find { |pod| pod.id == "NotableFacts:PeopleData" }
-  facts =  facts_sec.subpods[0].plaintext if facts_sec
+  facts = facts_sec.subpods[0].plaintext if facts_sec
   facts = '' if facts.nil?
   response.pods[1].subpods[0].plaintext + facts
 end
@@ -141,7 +141,7 @@ def quote response
 end
 
 
-def element
-  response.pods[0].subpods[0].plaintext + (response.find { |pod| pod.id == "CompanyInformation" }).subpods[0].plaintext
+def element response
+  response.pods[0].subpods[0].plaintext + (response.find { |pod| pod.id == "Elemental2:ElementData" }).subpods[0].plaintext
 end
 
