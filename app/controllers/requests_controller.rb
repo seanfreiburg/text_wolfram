@@ -45,9 +45,9 @@ def process_wolfram_response response
   body_out = ''
   case response.pods[1].id
     when "DecimalApproximation"
-      body_out = decimal_approx response
+      body_out = body_input +"=" + decimal_approx(response)
     when "Result"
-      body_out = result response
+      body_out = body_input +"=" + result(response)
     when "Plot"
       body_out = indefinite_integral response
     when "VisualRepresentationOfTheIntegral"
@@ -56,7 +56,7 @@ def process_wolfram_response response
       body_out = 'response not available'
   end
 
-  body_input + "=" + body_out
+  body_out
 end
 
 def result response
