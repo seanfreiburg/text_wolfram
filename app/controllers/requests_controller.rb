@@ -55,7 +55,9 @@ def process_wolfram_response response
     when "Definition:WordData"
       body_out = body_input +"=" + word_data(response)
     when "BasicInformation:MovieData"
-      body_out = response.pods[1].subpods[0].plaintext
+      body_out = movie response
+    when "CorporateInformationPod:InternetData"
+      body_out = corporate_internet response
     else
       body_out = 'response not available'
   end
@@ -109,6 +111,13 @@ def word_data response
   response.pods[1].subpods[0].plaintext
 end
 
+def movie response
+  response.pods[1].subpods[0].plaintext
+end
+
+def corporate_internet response
+  response.pods[1].subpods[0].plaintext
+end
 
 
 
