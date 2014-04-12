@@ -111,6 +111,19 @@ def ip_request(ip_address)
 
   #Probably don't want to use all of the data.
   JSON.load(response.body).to_s
+  if not hash['gds_error'].nil?
+    body = hash['gds_error']['message']
+  else
+    body = "IP Address: "+hash['ipinfo']['ip_address']+"\n"+
+        "Organization: "+hash['ipinfo']['Network']['organization']+"\n"+
+        "Carrier: "+hash['ipinfo']['Network']['carrier']+"\n"+
+        "Latitude: "+hash['ipinfo']['Location']['latitude'].to_s+"\n"+
+        "Longitude: "+hash['ipinfo']['Location']['longitude'].to_s+"\n"+
+        "Country: "+hash['ipinfo']['Location']['CountryData']['country']+"\n"+
+        "State: "+hash['ipinfo']['Location']['StateData']['state']+"\n"+
+        "City: "+hash['ipinfo']['Location']['CityData']['city']
+  end
+  body
 end
 
 def word_data response
