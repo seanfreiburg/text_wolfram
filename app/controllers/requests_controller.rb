@@ -123,7 +123,7 @@ end
 
 def people_data response
   facts = response.find { |pod| pod.id == "NotableFacts:PeopleData" }
-  response.pods[1].subpods[0].plaintext + facts.subpods[0].plaintext
+  response.pods[1].subpods[0].plaintext + facts.subpods[0].plaintext if facts
 end
 
 
