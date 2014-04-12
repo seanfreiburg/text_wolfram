@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1b8cc1e-a5e2-4e48-9ef0-5919c0dd4673" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/requests_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/requests_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.haml" afterPath="$PROJECT_DIR$/app/views/home/index.haml" />
     </list>
     <ignored path="text_wolfram.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,10 +88,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requests_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="requests_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="25" selection-start="3066" selection-end="3066" vertical-scroll-proportion="0.7470817" vertical-offset="1239" max-vertical-offset="2055">
+            <state line="121" column="25" selection-start="3066" selection-end="3066" vertical-scroll-proportion="0.0" vertical-offset="1239" max-vertical-offset="2055">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="21" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/home/index.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="19" selection-start="821" selection-end="821" vertical-scroll-proportion="0.7105263" vertical-offset="0" max-vertical-offset="760">
               <folding />
             </state>
           </provider>
@@ -125,8 +143,8 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/request.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.sass" />
-        <option value="$PROJECT_DIR$/app/views/home/index.haml" />
         <option value="$PROJECT_DIR$/app/controllers/requests_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/home/index.haml" />
       </list>
     </option>
   </component>
@@ -810,13 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="701" selection-end="701" vertical-scroll-proportion="0.30612245" vertical-offset="0" max-vertical-offset="784">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="706" selection-end="706" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="360">
@@ -831,13 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="91" selection-end="91" vertical-scroll-proportion="0.04016064" vertical-offset="0" max-vertical-offset="747">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/api_keys.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="20" selection-start="134" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
@@ -845,9 +849,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="21" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="25" selection-start="3066" selection-end="3066" vertical-scroll-proportion="0.7470817" vertical-offset="1239" max-vertical-offset="2055">
+        <state line="121" column="25" selection-start="3066" selection-end="3066" vertical-scroll-proportion="0.0" vertical-offset="1239" max-vertical-offset="2055">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="19" selection-start="821" selection-end="821" vertical-scroll-proportion="0.7105263" vertical-offset="0" max-vertical-offset="760">
           <folding />
         </state>
       </provider>
