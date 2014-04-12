@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1b8cc1e-a5e2-4e48-9ef0-5919c0dd4673" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/requests/index.haml" afterPath="$PROJECT_DIR$/app/views/requests/index.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/requests_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/requests_controller.rb" />
     </list>
     <ignored path="text_wolfram.iws" />
@@ -46,7 +47,16 @@
       <file leaf-file-name="requests_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="17" selection-start="751" selection-end="751" vertical-scroll-proportion="0.3877551" vertical-offset="191" max-vertical-offset="1035">
+            <state line="17" column="30" selection-start="452" selection-end="452" vertical-scroll-proportion="0.3252551" vertical-offset="0" max-vertical-offset="1110">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/requests/index.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="40" selection-start="11" selection-end="11" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
               <folding />
             </state>
           </provider>
@@ -128,6 +138,7 @@
         <option value="$PROJECT_DIR$/config/initializers/twilio_setup.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/config/initializers/api_keys.rb" />
+        <option value="$PROJECT_DIR$/app/views/requests/index.haml" />
         <option value="$PROJECT_DIR$/app/controllers/requests_controller.rb" />
       </list>
     </option>
@@ -661,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/requests/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="783">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="12" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
@@ -738,9 +742,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/requests/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="40" selection-start="11" selection-end="11" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="17" selection-start="751" selection-end="751" vertical-scroll-proportion="0.3877551" vertical-offset="191" max-vertical-offset="1035">
+        <state line="17" column="30" selection-start="452" selection-end="452" vertical-scroll-proportion="0.3252551" vertical-offset="0" max-vertical-offset="1110">
           <folding />
         </state>
       </provider>

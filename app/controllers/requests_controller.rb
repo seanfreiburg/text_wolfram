@@ -7,11 +7,15 @@ class RequestsController < ApplicationController
 
 
     body = process_request(params["Body"])
+
     @client.account.messages.create(
         :from => params["To"],
         :to => params["From"],
         :body => body
     )
+    @response = {:from => params["To"],
+                 :to => params["From"],
+                 :body => body}
   end
 
 
@@ -45,19 +49,20 @@ def try_result response
   begin
     input = response["Input"] # Get the input interpretation pod.
     result = response.find { |pod| pod.title == "Result" }
-    "#{input.subpods[0].plaintext} = \n #{result.subpods[0].plaintext}"
+    out = "#{input.subpods[0].plaintext} = \n #{result.subpods[0].plaintext}"
   rescue
-    nil
+    out = nil
   end
-
+  out
 end
 
 def try_decimal_approx response
   begin
     input = response["Input"].subpods[0].plaintext
     approx = response["DecimalApproximation"].subpods[0].plaintext
-    "#{input} = #{approx}"
+    out = "#{input} = #{approx}"
   rescue
-    nil
+    out =nil
   end
+  out
 end
