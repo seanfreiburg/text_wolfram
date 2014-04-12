@@ -60,6 +60,8 @@ def process_wolfram_response response
       body_out = corporate_internet response
     when "BasicInformation:PeopleData"
       body_out = people_data response
+    when "Quote"
+      body_out = quote response
     else
       body_out = 'response not available'
   end
@@ -126,6 +128,14 @@ def people_data response
   facts =  facts_sec.subpods[0].plaintext if facts_sec
   facts = '' if facts.nil?
   response.pods[1].subpods[0].plaintext + facts
+end
+
+def quote response
+  quote = (response.find { |pod| pod.id == "Quote" }).subpods[0].plaintext
+  company_info = (response.find { |pod| pod.id == "CompanyInformation" }).subpods[0].plaintext
+  body = ''
+  body += quote.to_s
+  body += company_info.to_s
 end
 
 
