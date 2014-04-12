@@ -19,7 +19,7 @@ class RequestsController < ApplicationController
     options = {"format" => "plaintext"} # see the reference appendix in the documentation.[1]
 
     client = WolframAlpha::Client.new WOLFRAM_API_KEY, options
-    response = client.query "5 largest countries"
+    response = client.query body
     input = response["Input"] # Get the input interpretation pod.
     result = response.find { |pod| pod.title == "Result" }
     "#{input.subpods[0].plaintext} = #{result.subpods[0].plaintext}"
