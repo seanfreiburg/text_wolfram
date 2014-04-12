@@ -122,8 +122,9 @@ def corporate_internet response
 end
 
 def people_data response
-  facts = response.find { |pod| pod.id == "NotableFacts:PeopleData" }
-  response.pods[1].subpods[0].plaintext + facts.subpods[0].plaintext if facts
+  facts_sec = response.find { |pod| pod.id == "NotableFacts:PeopleData" }
+  facts =  facts.subpods[0].plaintext if facts_sec
+  response.pods[1].subpods[0].plaintext + facts
 end
 
 
