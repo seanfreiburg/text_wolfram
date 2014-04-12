@@ -22,6 +22,7 @@ class RequestsController < ApplicationController
     response = client.query "5 largest countries"
     input = response["Input"] # Get the input interpretation pod.
     result = response.find { |pod| pod.title == "Result" }
+    "#{input.subpods[0].plaintext} = #{result.subpods[0].plaintext}"
 
   end
 end

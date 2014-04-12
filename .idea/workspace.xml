@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1b8cc1e-a5e2-4e48-9ef0-5919c0dd4673" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/initializers/twilio_setup.rb" afterPath="$PROJECT_DIR$/config/initializers/api_keys.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/requests_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/requests_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="text_wolfram.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +46,7 @@
       <file leaf-file-name="requests_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="58" selection-start="708" selection-end="708" vertical-scroll-proportion="0.44005102" vertical-offset="0" max-vertical-offset="784">
+            <state line="24" column="68" selection-start="777" selection-end="777" vertical-scroll-proportion="0.45918366" vertical-offset="0" max-vertical-offset="784">
               <folding />
             </state>
           </provider>
@@ -742,7 +740,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="58" selection-start="708" selection-end="708" vertical-scroll-proportion="0.44005102" vertical-offset="0" max-vertical-offset="784">
+        <state line="24" column="68" selection-start="777" selection-end="777" vertical-scroll-proportion="0.45918366" vertical-offset="0" max-vertical-offset="784">
           <folding />
         </state>
       </provider>
