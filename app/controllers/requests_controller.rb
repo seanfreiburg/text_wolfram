@@ -52,6 +52,8 @@ def process_wolfram_response response
       body_out = indefinite_integral response
     when "VisualRepresentationOfTheIntegral"
       body_out = definite_integral response
+    when "Definition:WordData"
+      body_out = body_input +"=" + word_data(response)
     else
       body_out = 'response not available'
   end
@@ -73,7 +75,8 @@ def indefinite_integral response
 end
 
 def definite_integral response
-  response["Input"].subpods[0].plaintext
+  bs = response["Input"].subpods[0].plaintext
+  #bs.gsub(/^/, " to ")
 end
 
 def ip_match body
@@ -98,6 +101,10 @@ def ip_request(ip_address)
 
   #Probably don't want to use all of the data.
   JSON.load(response.body).to_s
+end
+
+def word_data response
+  response.pods[1].subpods[0].plaintext
 end
 
 
