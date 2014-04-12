@@ -134,7 +134,7 @@ def quote response
   quote = (response.find { |pod| pod.id == "Quote" }).subpods[0].plaintext
   company_info = (response.find { |pod| pod.id == "CompanyInformation" }).subpods[0].plaintext
   body = ''
-  body += quote.to_s
+  body += quote.to_s + '\n'
   body += company_info.to_s
 end
 
