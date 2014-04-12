@@ -62,6 +62,8 @@ def process_wolfram_response response
       body_out = people_data response
     when "Quote"
       body_out = quote response
+    when "PeriodicTableLocation:ElementData"
+      body_out = element response
     else
       body_out = 'response not available'
   end
@@ -138,4 +140,7 @@ def quote response
   body += company_info.to_s
 end
 
+def element
+  response.pods[0].subpods[0].plaintext + response.pods[3].subpods[0].plaintext
+end
 
