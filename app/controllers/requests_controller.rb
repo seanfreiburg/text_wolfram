@@ -48,7 +48,7 @@ def process_wolfram_response response
       body_out = decimal_approx response
     when "Result"
       body_out = result response
-    when "IndefiniteIntegral"
+    when "Plot"
       body_out = indefinite_integral response
     when "VisualRepresentationOfTheIntegral"
       body_out = definite_integral response
