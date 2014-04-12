@@ -97,11 +97,10 @@ end
 
 def ip_request(ip_address)
 
-  current_time = Time.now
   timestamp = Time.now.to_i.to_s
-  sig = Digest::MD5.hexdigest(NEUSTAR_API_KEY+NEUSTAR_SHARED_SECRET+timestamp)
+  sig = Digest::MD5.hexdigest(API_KEY+SHARED_SECRET+timestamp)
 
-  request_url = "http://api.neustar.biz/ipi/std/#{NEUSTAR_API_VERSION}/ipinfo/#{ip_address}?apikey=#{NEUSTAR_API_KEY}&sig=#{sig}&format=json"
+  request_url = "http://api.neustar.biz/ipi/std/#{API_VERSION}/ipinfo/#{ip_address}?apikey=#{API_KEY}&sig=#{sig}&format=json"
 
   url = URI.parse(request_url)
   http = Net::HTTP.new(url.host, url.port)
@@ -109,21 +108,25 @@ def ip_request(ip_address)
 
   response = http.request(request)
 
-  #Probably don't want to use all of the data.
   hash = JSON.load(response.body)
-  if not hash['gds_error'].nil?
+
+  if not hash['gds_error'].nil? then
     body = hash['gds_error']['message']
   else
-    body = "IP Address: "+hash['ipinfo']['ip_address']+"\n"+
-        "Organization: "+hash['ipinfo']['Network']['organization']+"\n"+
-        "Carrier: "+hash['ipinfo']['Network']['carrier']+"\n"+
-        "Latitude: "+hash['ipinfo']['Location']['latitude'].to_s+"\n"+
-        "Longitude: "+hash['ipinfo']['Location']['longitude'].to_s+"\n"+
-        "Country: "+hash['ipinfo']['Location']['CountryData']['country']+"\n"+
-        "State: "+hash['ipinfo']['Location']['StateData']['state']+"\n"+
-        "City: "+hash['ipinfo']['Location']['CityData']['city']
+    body = info_check("IP Address: ", hash['ipinfo']['ip_address'], true)+
+        info_check("Organization: ", hash['ipinfo']['Network']['organization'], true)+
+        info_check("Carrier: ", hash['ipinfo']['Network']['carrier'], true)+
+        info_check("Latitude: ", hash['ipinfo']['Location']['latitude'], true)+
+        info_check("Longitude: ", hash['ipinfo']['Location']['longitude'], true)+
+        info_check("Country: ", hash['ipinfo']['Location']['CountryData']['country'], true)+
+        info_check("State: ", hash['ipinfo']['Location']['StateData']['state'], true)+
+        info_check("City: ", hash['ipinfo']['Location']['CityData']['city'], false)
+    if body.length < 30 then
+      body = "No IP mapping exists for [#{ip_address}]"
+    end
   end
   body
+
 end
 
 def word_data response
@@ -158,3 +161,16 @@ def element response
   response.pods[0].subpods[0].plaintext + (response.find { |pod| pod.id == "Elemental2:ElementData" }).subpods[0].plaintext
 end
 
+
+def info_check(title_text, json_object, newline)
+  if json_object.nil?
+  then
+    ""
+  else
+    title_text+json_object.to_s+ if newline then
+                                   "\n"
+                                 else
+                                   ""
+                                 end
+  end
+end
