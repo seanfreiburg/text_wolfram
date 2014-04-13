@@ -27,7 +27,7 @@ class RequestsController < ApplicationController
 
     elsif body.downcase.include? "command help"
       "The following are acceptable queries to text:\n\n192.168.0.1 (IP Addresses)\n\nValid Wolfram|Alpha queries\n\nDirections in the following form:\ndirections (required keyword)\nstart address\nend address"
-    elif body.downcase.include? "destination"
+    elsif body.downcase.include? "directions"
       des,start_ad, end_ad = body.split(",")
       directions(start_ad,end_ad)
     else

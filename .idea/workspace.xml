@@ -91,7 +91,7 @@
       <file leaf-file-name="requests_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="32" selection-start="626" selection-end="626" vertical-scroll-proportion="0.3385214" vertical-offset="144" max-vertical-offset="3195">
+            <state line="29" column="44" selection-start="897" selection-end="897" vertical-scroll-proportion="-0.67315173" vertical-offset="954" max-vertical-offset="3195">
               <folding />
             </state>
           </provider>
@@ -638,7 +638,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="32" selection-start="626" selection-end="626" vertical-scroll-proportion="0.3385214" vertical-offset="144" max-vertical-offset="3195">
+        <state line="29" column="44" selection-start="897" selection-end="897" vertical-scroll-proportion="-0.67315173" vertical-offset="954" max-vertical-offset="3195">
           <folding />
         </state>
       </provider>
