@@ -24,6 +24,12 @@ class RequestsController < ApplicationController
       "yes"
     elsif ip_match body
       ip_request body
+
+    elsif body.downcase == "help"
+      "The following are acceptable queries to text:\n\n192.168.0.1 (IP Addresses)\n\nValid Wolfram|Alpha queries\n\nDirections in the following form:\ndirections (required keyword)\nstart address\nend address"
+    elif body.downcase.include? "destination"
+      des,start_ad, end_ad = body.split(",")
+      directions(start_ad,end_ad)
     else
       wolfram_request body
     end
@@ -173,4 +179,29 @@ def info_check(title_text, json_object, newline)
                                    ""
                                  end
   end
+end
+
+def directions(source,destination)
+
+  url = URI("https://maps.googleapis.com/maps/api/directions/json")
+  params = { :sensor => false, :origin => source, :destination => destination, :key => "AIzaSyBvbZUMkNxFl5lvHp7U8763z8WsWtmD1Kw" }
+
+  url.query = URI.encode_www_form(params)
+  http = Net::HTTP.new(url.host, url.port)
+  http.use_ssl = true
+  request = Net::HTTP::Get.new(url.request_uri)
+
+  response = http.request(request)
+
+  hash = JSON.load(response.body)
+  #print hash
+  start_add = hash['routes'][0]['legs'][0]['start_address']
+  end_add = hash['routes'][0]['legs'][0]['end_address']
+  distance = hash['routes'][0]['legs'][0]['distance']['text']
+  time = hash['routes'][0]['legs'][0]['duration']['text']
+  body = "From: #{start_add}\nTo: #{end_add}\nDistance: #{distance}\nTime: #{time}\nDirections:\n"
+  for step in hash['routes'][0]['legs'][0]['steps']
+    body += " "+step['html_instructions']+"\n".encode("UTF-8")
+  end
+  body.gsub(%r{</?[^>]+?>}, '').gsub(/^(.*)(\S+)(?=Passing)/) {|s| s + ' '}.gsub(/^(.*)(\S+)(?=Entering)/) {|s| s + ' '}.gsub(/^(.*)(\S+)(?=Partial)/) {|s| s + ' '}.gsub(/^(.*)(\S+)(?=hToll)/) {|s| s + ' '}.gsub(/^(.*)(\S+)(?=Destination)/) {|s| s + ' '}.gsub(/^(.*)(\S+)(?=Continue)/) {|s| s + ' '}
 end
